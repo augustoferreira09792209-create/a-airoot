@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta | Roots Açaí</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="styler.css">
+
+</head>
+
+<body class="auth-page">
+
+
+    <div class="acessibilidade">
+
+        <button onclick="aumentarTexto()"
+            aria-label="Aumentar texto">
+            A+
+        </button>
+
+        <button onclick="diminuirTexto()"
+            aria-label="Diminuir texto">
+            A-
+        </button>
+
+        <button onclick="lerPagina()"
+            aria-label="Ler página">
+            🔊
+        </button>
+
+        <button onclick="pausarAudio()"
+            aria-label="Pausar leitura">
+            ⏸️
+        </button>
+
+        <button onclick="continuarAudio()"
+            aria-label="Continuar leitura">
+            ▶️
+        </button>
+
+        <button onclick="pararAudio()"
+            aria-label="Parar leitura">
+            ⏹️
+        </button>
+
+        <button onclick="alternarContraste()"
+            aria-label="Alto contraste">
+            ◐
+        </button>
+
+    </div>
+
+
+    <main class="auth-container">
+
+
+        <section class="auth-visual cadastro-visual">
+
+            <a href="index.html"
+                class="logo auth-logo">
+
+                <img src="imagens/logo.jpeg"
+                    alt="Roots Açaí">
+
+                <span>
+                    Roots
+                    <strong>Açaí</strong>
+                </span>
+
+            </a>
+
+
+            <div class="auth-visual-content">
+
+                <span>
+                    🍓 FAÇA PARTE DA ROOTS
+                </span>
+
+                <h1>
+                    Crie sua conta
+                    e aproveite.
+                </h1>
+
+                <p>
+                    Tenha uma experiência ainda mais
+                    prática para fazer seus pedidos.
+                </p>
+
+            </div>
+
+
+            <div class="auth-fruit">
+                🍇
+            </div>
+
+        </section>
+
+
+        <section class="auth-form-area">
+
+            <div class="auth-form">
+
+                <a href="index.html"
+                    class="voltar">
+                    ← Voltar para a loja
+                </a>
+
+
+                <div class="auth-heading">
+
+                    <span class="section-tag">
+                        NOVA CONTA
+                    </span>
+
+                    <h2>
+                        Criar conta
+                    </h2>
+
+                    <p>
+                        Cadastre-se gratuitamente.
+                    </p>
+
+                </div>
+
+
+                <form id="cadastroForm">
+
+                    <div class="form-group">
+
+                        <label for="cadNome">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cadNome"
+                            placeholder="Digite seu nome"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="cadEmail">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="cadEmail"
+                            placeholder="seu@email.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="cadSenha">
+                            Senha
+                        </label>
+
+                        <div class="input-password">
+
+                            <input
+                                type="password"
+                                id="cadSenha"
+                                placeholder="Crie uma senha"
+                                minlength="6"
+                                required>
+
+                            <button type="button"
+                                onclick="mostrarSenha('cadSenha', this)"
+                                aria-label="Mostrar senha">
+                                👁️
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="cadConfirmar">
+                            Confirmar senha
+                        </label>
+
+                        <div class="input-password">
+
+                            <input
+                                type="password"
+                                id="cadConfirmar"
+                                placeholder="Digite a senha novamente"
+                                required>
+
+                            <button type="button"
+                                onclick="mostrarSenha('cadConfirmar', this)"
+                                aria-label="Mostrar senha">
+                                👁️
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <label class="checkbox termos">
+
+                        <input type="checkbox"
+                            id="termos"
+                            required>
+
+                        <span>
+                            Concordo com os termos
+                            de uso e política de privacidade.
+                        </span>
+
+                    </label>
+
+
+                    <button type="submit"
+                        class="btn btn-primary btn-full">
+
+                        Criar minha conta
+
+                    </button>
+
+                </form>
+
+
+                <p class="auth-register">
+
+                    Já possui uma conta?
+
+                    <a href="login.html">
+                        Entrar
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

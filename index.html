@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Roots Açaí - O melhor açaí para deixar seu momento ainda mais especial.">
+
+    <meta name="theme-color"
+        content="#64149a">
+
+    <title>Roots Açaí | Seu momento merece um Açaí</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="styler.css">
+</head>
+
+<body>
+
+    <!-- ACESSIBILIDADE -->
+    <div class="acessibilidade"
+        aria-label="Ferramentas de acessibilidade">
+
+        <button onclick="aumentarTexto()"
+            aria-label="Aumentar tamanho do texto"
+            title="Aumentar texto">
+            A+
+        </button>
+
+        <button onclick="diminuirTexto()"
+            aria-label="Diminuir tamanho do texto"
+            title="Diminuir texto">
+            A-
+        </button>
+
+        <button onclick="lerPagina()"
+            aria-label="Ler página"
+            title="Ler página">
+            🔊
+        </button>
+
+        <button onclick="pausarAudio()"
+            aria-label="Pausar leitura"
+            title="Pausar leitura">
+            ⏸️
+        </button>
+
+        <button onclick="continuarAudio()"
+            aria-label="Continuar leitura"
+            title="Continuar leitura">
+            ▶️
+        </button>
+
+        <button onclick="pararAudio()"
+            aria-label="Parar leitura"
+            title="Parar leitura">
+            ⏹️
+        </button>
+
+        <button onclick="alternarContraste()"
+            aria-label="Ativar alto contraste"
+            title="Alto contraste">
+            ◐
+        </button>
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+                class="logo">
+
+                <img src="imagens/logo.jpeg"
+                    alt="Roots Açaí">
+
+                <span>
+                    Roots
+                    <strong>Açaí</strong>
+                </span>
+
+            </a>
+
+
+            <nav class="nav"
+                id="nav">
+
+                <a href="#inicio">Início</a>
+
+                <a href="#cardapio">Cardápio</a>
+
+                <a href="#diferenciais">Diferenciais</a>
+
+                <a href="#sobre">Sobre</a>
+
+                <a href="login.html">Entrar</a>
+
+                <a href="cadastro.html"
+                    class="nav-cadastro">
+                    Criar conta
+                </a>
+
+            </nav>
+
+
+            <button class="btn-carrinho"
+                onclick="abrirCarrinho()"
+                aria-label="Abrir carrinho">
+
+                🛒
+
+                <span>
+                    Carrinho
+                </span>
+
+                <b id="contadorCarrinho">
+                    0
+                </b>
+
+            </button>
+
+
+            <button class="menu-mobile"
+                onclick="alternarMenu()"
+                aria-label="Abrir menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero"
+            id="inicio">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+                        💜 FEITO PARA VOCÊ
+                    </span>
+
+                    <h1>
+                        Seu momento
+                        <span>merece um Açaí.</span>
+                    </h1>
+
+                    <p>
+                        Açaí cremoso, ingredientes selecionados
+                        e combinações deliciosas para deixar
+                        seu dia ainda melhor.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#cardapio"
+                            class="btn btn-primary">
+                            Ver cardápio
+                            →
+                        </a>
+
+                        <a href="#sobre"
+                            class="btn btn-outline">
+                            Conheça a Roots
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>+5k</strong>
+                            <span>clientes felizes</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>ingredientes selecionados</span>
+                        </div>
+
+                        <div>
+                            <strong>4.9★</strong>
+                            <span>avaliação</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="hero-circle"></div>
+
+                    <img src="imagens/acai4.jpeg"
+                        alt="Açaí Roots com frutas e adicionais">
+
+                    <div class="floating-card">
+                        🍓
+                        <div>
+                            <strong>Feito na hora</strong>
+                            <span>Do jeitinho que você gosta</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+        <section class="marquee">
+
+            <div>
+                💜 AÇAÍ CREMOSO
+                <span>✦</span>
+
+                🍓 FRUTAS FRESCAS
+                <span>✦</span>
+
+                🌿 INGREDIENTES SELECIONADOS
+                <span>✦</span>
+
+                💜 AÇAÍ CREMOSO
+                <span>✦</span>
+            </div>
+
+        </section>
+
+
+        <!-- CARDÁPIO -->
+        <section class="section"
+            id="cardapio">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            NOSSO CARDÁPIO
+                        </span>
+
+                        <h2>
+                            Escolha seu
+                            <span>favorito</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Monte seu açaí do seu jeito,
+                        escolha o tamanho e seus adicionais.
+                    </p>
+
+                </div>
+
+
+                <div class="produtos-grid">
+
+                    <!-- PRODUTO 1 -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="imagens/acai1.jpg"
+                                alt="Açaí tradicional">
+
+                            <span class="produto-badge">
+                                MAIS PEDIDO
+                            </span>
+
+                        </div>
+
+
+                        <div class="produto-info">
+
+                            <span class="produto-category">
+                                CLÁSSICO
+                            </span>
+
+                            <h3>
+                                Açaí Tradicional
+                            </h3>
+
+                            <p>
+                                Açaí cremoso acompanhado
+                                com  banana e granola e leite ninho.
+                            </p>
+
+
+                            <div class="produto-bottom">
+
+                                <div>
+                                    <small>
+                                        A partir de
+                                    </small>
+
+                                    <strong>
+                                        R$ 14,90
+                                    </strong>
+                                </div>
+
+                                <button
+                                    class="btn-add"
+                                    onclick="abrirProduto(1)">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUTO 2 -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="imagens/acai2.jpg"
+                                alt="Açaí com morango">
+
+                            <span class="produto-badge rosa">
+                                FAVORITO
+                            </span>
+
+                        </div>
+
+
+                        <div class="produto-info">
+
+                            <span class="produto-category">
+                                FRUTADO
+                            </span>
+
+                            <h3>
+                                Açaí com Morango
+                            </h3>
+
+                            <p>
+                                A combinação perfeita de açaí
+                                cremoso com morangos e granola leite ninho e calda
+                                de morango.
+                            </p>
+
+
+                            <div class="produto-bottom">
+
+                                <div>
+                                    <small>
+                                        A partir de
+                                    </small>
+
+                                    <strong>
+                                        R$ 17,90
+                                    </strong>
+                                </div>
+
+                                <button
+                                    class="btn-add"
+                                    onclick="abrirProduto(2)">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUTO 3 -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="imagens/acai3.jpg"
+                                alt="Açaí especial">
+
+                            <span class="produto-badge amarelo">
+                                ESPECIAL
+                            </span>
+
+                        </div>
+
+
+                        <div class="produto-info">
+
+                            <span class="produto-category">
+                                PREMIUM
+                            </span>
+
+                            <h3>
+                                Açaí Especial
+                            </h3>
+
+                            <p>
+                                Uma combinação completa para
+                                quem quer uma experiência diferente com 
+                                morango, banana,granola,leite ninho e calda de chocolate.
+                            </p>
+
+
+                            <div class="produto-bottom">
+
+                                <div>
+                                    <small>
+                                        A partir de
+                                    </small>
+
+                                    <strong>
+                                        R$ 21,90
+                                    </strong>
+                                </div>
+
+                                <button
+                                    class="btn-add"
+                                    onclick="abrirProduto(3)">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+ <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="imagens/acai5.jpg"
+                                alt="Açaí KIDS">
+
+                            <span class="produto-badge">
+                                KIDS
+                            </span>
+
+                        </div>
+
+
+                        <div class="produto-info">
+
+                            <span class="produto-category">
+                                KIDS
+                            </span>
+
+                            <h3>
+                                Açaí KIDS
+                            </h3>
+
+                            <p>
+                                Açaí cremoso acompanhado
+                                com  banana e granola com leite ninho
+                                morango e confeites.
+                            </p>
+
+
+                            <div class="produto-bottom">
+
+                                <div>
+                                    <small>
+                                        A partir de
+                                    </small>
+
+                                    <strong>
+                                        R$ 20,00
+                                    </strong>
+                                </div>
+
+                                <button
+                                    class="btn-add"
+                                    onclick="abrirProduto(5)">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIFERENCIAIS -->
+        <section class="section diferenciais"
+            id="diferenciais">
+
+            <div class="container">
+
+                <div class="section-header center">
+
+                    
+
+                    <h2>
+                        Mais que açaí.
+                        <span>É experiência.</span>
+                    </h2>
+
+                    <p>
+                        Tudo pensado para você aproveitar
+                        cada colherada.
+                    </p>
+
+                </div>
+
+
+                <div class="beneficios-grid">
+
+                    <div class="beneficio">
+
+                        <div class="beneficio-icon">
+                            🍇
+                        </div>
+
+                        <h3>
+                            Açaí de qualidade
+                        </h3>
+
+                        <p>
+                            Cremoso, saboroso e preparado
+                            com ingredientes selecionados.
+                        </p>
+
+                    </div>
+
+
+                    <div class="beneficio">
+
+                        <div class="beneficio-icon">
+                            🍓
+                        </div>
+
+                        <h3>
+                            Frutas frescas
+                        </h3>
+
+                        <p>
+                            Morango, banana e outras opções
+                            para deixar seu pedido ainda melhor.
+                        </p>
+
+                    </div>
+
+
+                    <div class="beneficio">
+
+                        <div class="beneficio-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Pedido rápido
+                        </h3>
+
+                        <p>
+                            Faça seu pedido online de maneira
+                            simples, rápida e prática.
+                        </p>
+
+                    </div>
+
+
+                    <div class="beneficio">
+
+                        <div class="beneficio-icon">
+                            💜
+                        </div>
+
+                        <h3>
+                            Do seu jeito
+                        </h3>
+
+                        <p>
+                            Escolha tamanho, adicionais e
+                            monte seu açaí como preferir.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="sobre"
+            id="sobre">
+
+            <div class="container sobre-grid">
+
+                <div class="sobre-images">
+
+                    <img src="imagens/acai6.jpg"
+                        alt="Açaí Roots">
+
+                    <div class="sobre-card">
+                        💜
+                        <strong>
+                            Feito com carinho
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="sobre-content">
+
+                    <span class="section-tag">
+                        SOBRE A ROOTS
+                    </span>
+
+                    <h2>
+                        O sabor que combina
+                        com o seu momento.
+                    </h2>
+
+                    <p>
+                       A Roots Açaí nasceu com o propósito de levar mais sabor, qualidade e alegria para os momentos do dia a dia. Com muito carinho em cada detalhe, transformamos o açaí em uma experiência especial, oferecendo combinações deliciosas e acompanhamentos para todos os gostos.
+                    </p>
+
+                    <p>
+                        Selecionamos nossos ingredientes com
+                        cuidado e preparamos cada pedido
+                        pensando em qualidade, sabor e
+                        praticidade.
+                    </p>
+
+
+                    <a href="#cardapio"
+                        class="btn btn-primary">
+                        Quero experimentar
+                        →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <span>
+                        💜 SEU AÇAÍ ESTÁ TE ESPERANDO
+                    </span>
+
+                    <h2>
+                        Bora montar o seu?
+                    </h2>
+
+                    <p>
+                        Escolha seu tamanho,
+                        seus adicionais e aproveite.
+                    </p>
+
+                    <a href="#cardapio"
+                        class="btn btn-yellow">
+                        Montar meu açaí →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#"
+                    class="logo footer-logo">
+
+                    <img src="imagens/logo.png"
+                        alt="Roots Açaí">
+
+                    <span>
+                        Roots
+                        <strong>Açaí</strong>
+                    </span>
+
+                </a>
+
+                <p>
+                    Seu momento merece um Açaí.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Navegação
+                </h4>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#cardapio">
+                    Cardápio
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Conta
+                </h4>
+
+                <a href="login.html">
+                    Entrar
+                </a>
+
+                <a href="cadastro.html">
+                    Criar conta
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Fale conosco
+                </h4>
+
+                <a href="#">
+                    📱 WhatsApp
+                </a>
+
+                <a href="#">
+                    📸 Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Roots Açaí. Todos os direitos reservados.
+            </p>
+
+            <p>
+                Feito com 💜
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL PRODUTO -->
+    <div class="modal"
+        id="modalProduto"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitulo">
+
+        <div class="modal-content produto-modal">
+
+            <button class="modal-close"
+                onclick="fecharProduto()"
+                aria-label="Fechar">
+                ×
+            </button>
+
+            <div class="modal-img">
+
+                <img id="modalImagem"
+                    src=""
+                    alt="Produto">
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <span class="section-tag">
+                    PERSONALIZE
+                </span>
+
+                <h2 id="modalTitulo">
+                    Produto
+                </h2>
+
+                <p id="modalDescricao">
+                </p>
+
+
+                <div class="opcao">
+
+                    <h3>
+                        Escolha o tamanho
+                    </h3>
+
+                    <div class="tamanhos">
+
+                        <label>
+                            <input type="radio"
+                                name="tamanho"
+                                value="300"
+                                checked
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                300ml
+                                <small>+ R$ 0,00</small>
+                            </span>
+                        </label>
+
+
+                        <label>
+                            <input type="radio"
+                                name="tamanho"
+                                value="500"
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                500ml
+                                <small>+ R$ 4,00</small>
+                            </span>
+                        </label>
+
+
+                        <label>
+                            <input type="radio"
+                                name="tamanho"
+                                value="700"
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                700ml
+                                <small>+ R$ 7,00</small>
+                            </span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="opcao">
+
+                    <h3>
+                        Adicionais
+                    </h3>
+
+                    <div class="adicionais">
+
+                        <label>
+                            <input type="checkbox"
+                                value="3"
+                                data-nome="Banana"
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                Banana
+                                <b>+ R$ 3,00</b>
+                            </span>
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox"
+                                value="4"
+                                data-nome="Morango"
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                Morango
+                                <b>+ R$ 4,00</b>
+                            </span>
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox"
+                                value="4"
+                                data-nome="Leite Ninho"
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                Leite Ninho
+                                <b>+ R$ 4,00</b>
+                            </span>
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox"
+                                value="3"
+                                data-nome="Granola"
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                chantilly
+                            <b>+ R$ 5,00</b>
+                            </span>
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox"
+                                value="5"
+                                data-nome="Nutella"
+                                onchange="atualizarTotalModal()">
+
+                            <span>
+                                Nutella
+                                <b>+ R$ 7,00</b>
+                            </span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="modalTotal">
+                        R$ 14,90
+                    </strong>
+
+                </div>
+
+
+                <button class="btn btn-primary btn-full"
+                    onclick="adicionarAoCarrinho()">
+
+                    Adicionar ao carrinho 🛒
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL CARRINHO -->
+    <div class="modal"
+        id="modalCarrinho"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tituloCarrinho">
+
+        <div class="modal-content carrinho-modal">
+
+            <button class="modal-close"
+                onclick="fecharCarrinho()"
+                aria-label="Fechar">
+                ×
+            </button>
+
+            <div class="modal-body">
+
+                <span class="section-tag">
+                    SEU PEDIDO
+                </span>
+
+                <h2 id="tituloCarrinho">
+                    Meu carrinho 🛒
+                </h2>
+
+
+                <div id="listaCarrinho"
+                    class="lista-carrinho">
+                </div>
+
+
+                <div class="carrinho-vazio"
+                    id="carrinhoVazio">
+
+                    <div>
+                        🛒
+                    </div>
+
+                    <h3>
+                        Seu carrinho está vazio
+                    </h3>
+
+                    <p>
+                        Escolha um açaí delicioso
+                        para começar.
+                    </p>
+
+                </div>
+
+
+                <div class="carrinho-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="totalCarrinho">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <button class="btn btn-primary btn-full"
+                    onclick="finalizarPedido()">
+
+                    Finalizar pelo WhatsApp 📲
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

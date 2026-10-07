@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Entrar | Roots Açaí</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="styler.css">
+
+</head>
+
+<body class="auth-page">
+
+
+    <div class="acessibilidade">
+
+        <button onclick="aumentarTexto()"
+            aria-label="Aumentar texto">
+            A+
+        </button>
+
+        <button onclick="diminuirTexto()"
+            aria-label="Diminuir texto">
+            A-
+        </button>
+
+        <button onclick="lerPagina()"
+            aria-label="Ler página">
+            🔊
+        </button>
+
+        <button onclick="pausarAudio()"
+            aria-label="Pausar leitura">
+            ⏸️
+        </button>
+
+        <button onclick="continuarAudio()"
+            aria-label="Continuar leitura">
+            ▶️
+        </button>
+
+        <button onclick="pararAudio()"
+            aria-label="Parar leitura">
+            ⏹️
+        </button>
+
+        <button onclick="alternarContraste()"
+            aria-label="Alto contraste">
+            ◐
+        </button>
+
+    </div>
+
+
+    <main class="auth-container">
+
+
+        <section class="auth-visual">
+
+            <a href="index.html"
+                class="logo auth-logo">
+
+                <img src="imagens/logo.png"
+                    alt="Roots Açaí">
+
+                <span>
+                    Roots
+                    <strong>Açaí</strong>
+                </span>
+
+            </a>
+
+
+            <div class="auth-visual-content">
+
+                <span>
+                    💜 BEM-VINDO DE VOLTA
+                </span>
+
+                <h1>
+                    Seu açaí
+                    está te esperando.
+                </h1>
+
+                <p>
+                    Entre na sua conta para acompanhar
+                    seus pedidos e aproveitar a experiência
+                    Roots Açaí.
+                </p>
+
+            </div>
+
+
+            <div class="auth-fruit">
+                🍓
+            </div>
+
+        </section>
+
+
+        <section class="auth-form-area">
+
+            <div class="auth-form">
+
+                <a href="index.html"
+                    class="voltar">
+                    ← Voltar para a loja
+                </a>
+
+                <div class="auth-heading">
+
+                    <span class="section-tag">
+                        ACESSAR CONTA
+                    </span>
+
+                    <h2>
+                        Entrar na Roots
+                    </h2>
+
+                    <p>
+                        Preencha seus dados para continuar.
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="seu@email.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="loginSenha">
+                            Senha
+                        </label>
+
+                        <div class="input-password">
+
+                            <input
+                                type="password"
+                                id="loginSenha"
+                                placeholder="Digite sua senha"
+                                required>
+
+                            <button type="button"
+                                onclick="mostrarSenha('loginSenha', this)"
+                                aria-label="Mostrar senha">
+                                👁️
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-options">
+
+                        <label class="checkbox">
+
+                            <input type="checkbox">
+
+                            <span>
+                                Lembrar de mim
+                            </span>
+
+                        </label>
+
+                        <button type="button"
+                            class="forgot"
+                            onclick="esqueciSenha()">
+                            Esqueci minha senha
+                        </button>
+
+                    </div>
+
+
+                    <button type="submit"
+                        class="btn btn-primary btn-full">
+                        Entrar
+                    </button>
+
+                </form>
+
+
+                <div class="auth-divider">
+                    <span>
+                        ou
+                    </span>
+                </div>
+
+
+                <p class="auth-register">
+
+                    Ainda não tem uma conta?
+
+                    <a href="cadastro.html">
+                        Criar conta
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
